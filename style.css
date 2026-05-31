@@ -1,14 +1,13 @@
-/* Variáveis globais */
 :root {
   --cor-principal: #3b82f6;
   --cor-escura: #1e293b;
   --cor-fundo: #f1f5f9;
 }
 
-/* Reset de margens */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -16,7 +15,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Cabeçalho */
 header {
   background-color: var(--cor-escura);
   color: white;
@@ -39,7 +37,6 @@ header nav ul li a {
   text-decoration: none;
 }
 
-/* Seção Sobre Mim */
 #sobre {
   text-align: center;
   padding: 40px 20px;
@@ -53,7 +50,6 @@ header nav ul li a {
   margin: 20px auto;
 }
 
-/* Seção Projetos */
 #projetos {
   padding: 40px 20px;
 }
@@ -62,21 +58,40 @@ header nav ul li a {
   margin-bottom: 20px;
 }
 
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
 article {
   background-color: white;
   padding: 20px;
   border: 1px solid #cbd5e1;
+  border-radius: 8px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
 }
 
-/* Seção Contato */
+article a {
+  color: var(--cor-principal);
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
 #contato {
   padding: 40px 20px;
+  max-width: 600px;
 }
 
 #contato h2 {
   margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 input,
@@ -84,8 +99,6 @@ textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #cbd5e1;
-  margin-top: 5px;
-  box-sizing: border-box;
 }
 
 button {
@@ -94,9 +107,15 @@ button {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+  margin-top: 15px;
 }
 
-/* Rodapé */
+#mensagem-feedback {
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+}
+
 footer {
   background-color: var(--cor-escura);
   color: white;
