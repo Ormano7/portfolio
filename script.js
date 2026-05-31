@@ -1,13 +1,13 @@
 const projetos = [
   {
-    titulo: 'Calculadora',
-    descricao: 'Uma calculadora simples feita com HTML, CSS e JavaScript.',
-    link: 'https://github.com'
+  titulo: 'Site candidata',
+    descricao: 'Um site simples para uma candidata feito com HTML, CSS',
+    link: 'https://site-ana-paula-gamma.vercel.app/'
   },
   {
-    titulo: 'Lista de Tarefas',
-    descricao: 'Aplicação para adicionar e remover tarefas do dia a dia.',
-    link: 'https://github.com'
+    titulo: 'Gestão escolar',
+    descricao: 'Aplicação para gestão escolar.',
+    link: 'https://site-ana-paula-gamma.vercel.app/'
   },
   {
     titulo: 'Portfólio',
