@@ -1,0 +1,106 @@
+/* Variáveis globais */
+:root {
+  --cor-principal: #3b82f6;
+  --cor-escura: #1e293b;
+  --cor-fundo: #f1f5f9;
+}
+
+/* Reset de margens */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--cor-escura);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Seção Sobre Mim */
+#sobre {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#sobre img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Seção Projetos */
+#projetos {
+  padding: 40px 20px;
+}
+
+#projetos h2 {
+  margin-bottom: 20px;
+}
+
+article {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #cbd5e1;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Seção Contato */
+#contato {
+  padding: 40px 20px;
+}
+
+#contato h2 {
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: var(--cor-principal);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--cor-escura);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
